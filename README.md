@@ -9,6 +9,10 @@ This project provides a minimal, async MCP (Model Context Protocol) server that 
 - `python-dotenv` for environment variable management.
 - `uv` as the package manager & runner (fast, lockfile-based, Python 3.11+).
 
+<a href="https://glama.ai/mcp/servers/@AIwithhassan/mcp-server-python">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@AIwithhassan/mcp-server-python/badge" alt="Documentation Retrieval & Web Scraping MCP server" />
+</a>
+
 ### Features
 - Search restricted to official docs domains (`uv`, `langchain`, `openai`, `llama-index`).
 - Tool: `get_docs(query, library)` returns concatenated cleaned sections with `SOURCE:` labels.
@@ -156,7 +160,7 @@ asyncio.run(demo())
 ---
 ## Running With Active Virtualenv
 
-If you have an already activated virtual environment and want to use that instead of the project’s pinned environment, you can force uv to target it:
+If you have an already activated virtual environment and want to use that instead of the project's pinned environment, you can force uv to target it:
 ```bash
 uv run --active client.py
 ```
@@ -200,4 +204,3 @@ Add a license section here (e.g., MIT) if you intend to distribute.
 - Groq for fast OSS model serving
 - Astral for `uv`
 - MCP ecosystem for protocol foundation
-
